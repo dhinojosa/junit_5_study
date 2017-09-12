@@ -22,15 +22,9 @@ public class JUnit5FixturesTest {
     }
 
     @Test
-    @Disabled("for demonstration purposes")
+    @Disabled("because I don't want the test to fail")
     void failingTest() {
         fail("a failing test");
-    }
-
-    @Test
-    @Disabled("for demonstration purposes")
-    void skippedTest() {
-        // not executed
     }
 
     @AfterEach

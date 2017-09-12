@@ -49,6 +49,11 @@
             <version>${junit.vintage.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.easymock</groupId>
             <artifactId>easymock</artifactId>
             <version>3.4</version>
@@ -80,12 +85,12 @@
                         <include>**/*TestCase.java</include>
                     </includes>
                     <properties>
-                        <!-- <includeTags>fast</includeTags> -->
-                        <excludeTags>slow</excludeTags>
+                        <!--<includeTags>fast</includeTags>-->
+                        <!--<excludeTags>slow</excludeTags>-->
                         <!--
                         <configurationParameters>
                                  junit.jupiter.conditions.deactivate = *
-                             </configurationParameters>
+                        </configurationParameters>
                         -->
                     </properties>
                 </configuration>
